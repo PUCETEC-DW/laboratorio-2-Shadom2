@@ -4,8 +4,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f2f5;
-  color: #333;
+  background-color: #121212;
+  color: #e0e0e0;
   margin: 0;
   padding: 0 20px;
 }
@@ -13,7 +13,7 @@ body {
 h1 {
   text-align: center;
   margin-top: 40px;
-  color: #222;
+  color: #00c853;
 }
 
 #buscar {
@@ -23,9 +23,15 @@ h1 {
   margin: 20px auto;
   padding: 12px 15px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  background-color: #1e1e1e;
+  border: 1px solid #00c853;
+  color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+
+#buscar::placeholder {
+  color: #aaaaaa;
 }
 
 #resultado {
@@ -37,9 +43,10 @@ h1 {
 }
 
 .pais {
-  background-color: #fff;
+  background-color: #1e1e1e;
+  border-left: 5px solid #00c853;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 200, 83, 0.2);
   padding: 20px;
   text-align: center;
   width: 260px;
@@ -48,6 +55,7 @@ h1 {
 
 .pais:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 200, 83, 0.3);
 }
 
 .pais img {
@@ -55,16 +63,21 @@ h1 {
   height: auto;
   border-radius: 6px;
   margin-bottom: 15px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
 .pais h3 {
   font-size: 18px;
   margin: 10px 0;
+  color: #ffffff;
 }
 
 .pais p {
   margin: 5px 0;
   font-size: 14px;
-  color: #555;
+  color: #bbbbbb;
+}
+
+strong {
+  color: #00c853;
 }
